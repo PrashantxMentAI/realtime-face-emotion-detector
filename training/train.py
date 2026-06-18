@@ -141,7 +141,7 @@ def train_model(csv_path, output_onnx_path, epochs=3, batch_size=32, lr=0.001):
         dummy_input, 
         output_onnx_path,
         export_params=True,
-        operset_version=11,
+        opset_version=11,
         do_constant_folding=True,
         input_names=["input"],
         output_names=["output"],
