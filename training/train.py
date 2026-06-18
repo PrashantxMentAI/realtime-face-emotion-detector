@@ -145,7 +145,8 @@ def train_model(csv_path, output_onnx_path, epochs=3, batch_size=32, lr=0.001):
         do_constant_folding=True,
         input_names=["input"],
         output_names=["output"],
-        dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}}
+        dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}},
+        dynamo=False
     )
     print(f"Model exported successfully to: {output_onnx_path}")
     return True
