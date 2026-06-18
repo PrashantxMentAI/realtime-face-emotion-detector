@@ -1,0 +1,30 @@
+# Python virtual environments
+venv/
+ENV/
+env/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large Model Weights (automatically downloaded by the app)
+assets/models/
+
+# Captured snapshots
+snapshots/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
